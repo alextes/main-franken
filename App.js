@@ -56,7 +56,7 @@ const WelcomeScreen = ({ navigation }) => (
       <Title style={{ paddingTop: 48 }}>Main Franken</Title>
     </View>
     <VaultSvg />
-    <TouchableOpacity onPress={() => navigation.replace("wallet")}>
+    <TouchableOpacity onPress={() => navigation.navigate("wallet")}>
       <StartSvg style={{ marginBottom: 32 }} />
     </TouchableOpacity>
     {/* <StatusBar style="auto" /> */}
