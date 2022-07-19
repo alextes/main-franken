@@ -1,6 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { StatusBar } from "expo-status-bar";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import StartSvg from "./StartSvg";
 import VaultSvg from "./VaultSvg";
@@ -86,12 +85,14 @@ const WalletScreen = () => (
         alignItems: "center",
       }}
     >
-      <View style={{ flexDirection: "row", alignItems: "center" }}>
-        <Image source={avatar1} style={{ width: 62, height: 63 }} />
-        <Text style={{ fontSize: 24, fontWeight: "500", marginLeft: 8 }}>
-          lea
-        </Text>
-      </View>
+      <TouchableOpacity>
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <Image source={avatar1} style={{ width: 62, height: 63 }} />
+          <Text style={{ fontSize: 24, fontWeight: "500", marginLeft: 8 }}>
+            lea
+          </Text>
+        </View>
+      </TouchableOpacity>
       <TouchableOpacity>
         <ShareSvg />
       </TouchableOpacity>
